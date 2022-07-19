@@ -1,0 +1,131 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&family=Poppins&family=Raleway&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 40);
+    width: 100%;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.menu>i {
+    margin: 5px;
+}
+
+
+/* header style */
+.header-section {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+header>section>header>h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.prebook {
+    background-color: rgb(171, 48, 48);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+/* main styles */
+.logos {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid gray;
+    border-inline: none;
+    margin: 50px 20px;
+    padding: 20px;
+}
+
+/* gear details style */
+#h1 {
+    text-align: center;
+}
+
+.ratings>i {
+    color: gold;
+}
+
+.gear-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.gear {
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.see-more {
+    color: red;
+    margin-left: 90%;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main-section3 {
+    display: flex;
+    margin-left: 10%;
+}
+
+.section3-header {
+    margin-left: 8%;
+}
+
+/* footer styles */
+footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(15, 15, 40);
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* styles for smaller device */
+@media only screen and (max-width:688px) {
+    .gear-details {
+        width: 100%;
+    }
+
+    .header-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+    }
+
+    .main-section3 {
+        flex-direction: column;
+    }
+
+    .main-section3,
+    .gear-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
